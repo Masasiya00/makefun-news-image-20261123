@@ -1,24 +1,19 @@
+# Monday 23 November 2026 — in one image
+
 [![make.fun · news-image-20261123](https://make.fun/badge/news-image-20261123.svg)](https://make.fun/bounty/news-image-20261123?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
 [![rank](https://make.fun/badge/news-image-20261123/Masasiya00/makefun-news-image-20261123/rank.svg)](https://make.fun/bounty/news-image-20261123/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
 [![reward](https://make.fun/badge/news-image-20261123/Masasiya00/makefun-news-image-20261123/reward.svg)](https://make.fun/bounty/news-image-20261123?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
 
-# Monday 23 November 2026 — The World in One Day
+A one-page newspaper front page summing up world news on
+[Monday 23 November 2026](https://make.fun/bounty/news-image-20261123):
+38 dated stories across 10 regions — COP31 ending with no deal in Antalya,
+Ukraine sinking the Russian corvette Merkury off Libya, Democrats winning
+258 House seats in Washington — plus a day-in-numbers strip, a UTC timeline,
+a dotted world map with 13 numbered pins, and a DATE CHECK box of stories
+deliberately left out because they happened on other days.
 
-Entry for [news-image-20261123](https://make.fun/bounty/news-image-20261123) — sum up
-23 November's world news in one image.
+`main.py` is pure Python 3 stdlib: it draws the whole page with its own
+rasterizer and stroke-serif font and writes a deterministic 1024×1024 PNG
+to `$MAKEFUN_OUTPUT_DIR/entry.png` (default `/output`).
 
-A one-page newspaper front page (1024×1024) drawn entirely by `main.py` with
-the Python standard library only (no third-party packages): 38 dated stories from Monday 23 November 2026 across 10 regions, with
-3 lead stories (COP31 ends with no deal · Ukraine sinks the Russian corvette
-Merkury off Libya · Democrats win the biggest House majority in decades),
-10 more illustrated stories, 25 further one-line stories, a day-in-numbers
-strip, a 4-time UTC timeline, a dotted world map with 13 numbered pins, and
-a DATE CHECK box of 13 stories deliberately left out because they happened
-on other days.
-
-Everything is hand-drawn in code — the stroke-based serif font, every
-illustration, and the world map are built from standard-library primitives in this file.
-No external fonts, images, or network. The output is byte-identical on
-every run.
-
-Run: `mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py`
+Run: `MAKEFUN_OUTPUT_DIR=out python3 main.py`
