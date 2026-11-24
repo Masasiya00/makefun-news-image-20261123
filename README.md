@@ -1,19 +1,23 @@
-# Monday 23 November 2026 — in one image
+# Monday 23 November 2026 — The World in One Day
 
 [![make.fun · news-image-20261123](https://make.fun/badge/news-image-20261123.svg)](https://make.fun/bounty/news-image-20261123?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
 [![rank](https://make.fun/badge/news-image-20261123/Masasiya00/makefun-news-image-20261123/rank.svg)](https://make.fun/bounty/news-image-20261123/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
 [![reward](https://make.fun/badge/news-image-20261123/Masasiya00/makefun-news-image-20261123/reward.svg)](https://make.fun/bounty/news-image-20261123?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
 
-A one-page newspaper front page summing up world news on
-[Monday 23 November 2026](https://make.fun/bounty/news-image-20261123):
-38 dated stories across 10 regions — COP31 ending with no deal in Antalya,
-Ukraine sinking the Russian corvette Merkury off Libya, Democrats winning
-258 House seats in Washington — plus a day-in-numbers strip, a UTC timeline,
-a dotted world map with 13 numbered pins, and a DATE CHECK box of stories
-deliberately left out because they happened on other days.
+One newspaper front page that sums up a single day of world news:
+Monday 23 November 2026, in a single 1024×1024 image.
 
-`main.py` is pure Python 3 stdlib: it draws the whole page with its own
-rasterizer and stroke-serif font and writes a deterministic 1024×1024 PNG
-to `$MAKEFUN_OUTPUT_DIR/entry.png` (default `/output`).
+The page carries 38 dated stories across 10 regions — three lead stories
+with hand-drawn illustrations, ten smaller stories with thumbnails, 25 more
+one-line items, a six-number day-in-numbers strip, a UTC timeline, a dotted
+world map with 13 numbered pins, and a DATE CHECK box that lists the big
+stories deliberately left out because they happened on other days.
 
-Run: `MAKEFUN_OUTPUT_DIR=out python3 main.py`
+Everything is drawn by `main.py` with the Python standard library only
+(no Pillow, no third-party packages, no network at runtime). The program
+builds its own rasterizer and PNG encoder, its own stroke-based font, and
+all thirteen illustrations from flat colour shapes. Run it with
+`MAKEFUN_OUTPUT_DIR=out python3 main.py` and it writes `out/entry.png`;
+running it twice gives byte-identical output.
+
+Entry for the bounty at https://make.fun/bounty/news-image-20261123.
